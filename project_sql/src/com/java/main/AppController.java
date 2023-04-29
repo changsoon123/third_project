@@ -1,15 +1,16 @@
 package com.java.main;
 
-
+import com.java.common.AppService;
+import com.java.restaurant.service.Restaurantservice;
 
 public class AppController {
 	
+	private AppService service;
 		//시스템을 정해주는 기능
 		public void chooseSystem(int selectNumber) {
-			
 			switch (selectNumber) {
 			case 1: 
-//				service = new UserService();
+				service = new Restaurantservice();
 				break;
 			case 2: 
 //				service = new OrderService();
@@ -30,6 +31,6 @@ public class AppController {
 				System.out.println("# 메뉴를 다시 입력하세요.");
 			}
 			
-//			service.start();
+			service.start();
 		}
 	}

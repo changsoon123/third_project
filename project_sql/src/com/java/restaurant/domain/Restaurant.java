@@ -1,12 +1,12 @@
-package com.java.restaurant;
+package com.java.restaurant.domain;
 
-public class restaurant {
+public class Restaurant {
 
 	private int restaurant_id;
 	private String restaurant_name;
 	private String main_menu;
 	private	int price;
-	private String adress;
+	private String address;
 	
 	
 //	CREATE TABLE Restaurant
@@ -15,20 +15,20 @@ public class restaurant {
 //		restaurant_name varchar2(20) NOT NULL,
 //		main_menu varchar2(20) NOT NULL,
 //		price number(20) NOT NULL,
-//		adress varchar2(20) NOT NULL,
+//		address varchar2(20) NOT NULL,
 //		PRIMARY KEY (restaurant_id)
 //	);
 	
-	public restaurant() {}
+	public Restaurant() {}
 
 	
-	public restaurant(int restaurant_id, String restaurant_name, String main_menu, int price, String adress) {
+	public Restaurant(int restaurant_id, String restaurant_name, String main_menu, int price, String address) {
 		super();
 		this.restaurant_id = restaurant_id;
 		this.restaurant_name = restaurant_name;
 		this.main_menu = main_menu;
 		this.price = price;
-		this.adress = adress;
+		this.address = address;
 	}
 	
 
@@ -72,13 +72,13 @@ public class restaurant {
 	}
 
 
-	public String getAdress() {
-		return adress;
+	public String getAddress() {
+		return address;
 	}
 
 
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 
@@ -91,7 +91,7 @@ public class restaurant {
 				", 가게 이름: " + restaurant_name + 
 				", 메인 메뉴: " + main_menu + 
 				", 가격: " + price + "원" +
-				", 가게 위치: " + adress;
+				", 가게 위치: " + address;
 	}
 
 	

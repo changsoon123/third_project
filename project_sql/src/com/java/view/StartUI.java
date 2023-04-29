@@ -46,12 +46,22 @@ public class StartUI {
 	        System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
 		}
 		
+		public static void searchMenu() {
+			System.out.println("\u001B[31;1;4;41;42;43;44;45;46m----------------------------------------------------\u001B[0m");
+	        System.out.println("1.전체 검색");
+	        System.out.println("2.국가별 음식 검색(한식,중식,일식,양식)");
+	        System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
+		}
 		
-//	        System.out.println("1.맛");
-//	        System.out.println("2.거리");
-//	        System.out.println("3.가격");
-//	        System.out.println("4.종합");
-	        
+		public static void fourMenu() {
+			System.out.println("\u001B[31;1;4;41;42;43;44;45;46m----------------------------------------------------\u001B[0m");
+			System.out.println("1.한식 검색");
+			System.out.println("2.일식 검색");
+			System.out.println("3.중식 검색");
+			System.out.println("4.양식 검색");
+			System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
+		}
+		
 	        
 	}
 
