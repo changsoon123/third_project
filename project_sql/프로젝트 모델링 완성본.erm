@@ -41,7 +41,7 @@
 		<suspend_validator>false</suspend_validator>
 		<export_setting>
 			<export_ddl_setting>
-				<output_path>C:\Users\ict03-17\Desktop\프로젝트 모델링 완성본.sql</output_path>
+				<output_path>C:\Users\ict03-17\Desktop\프로젝트 모델링 완성본(수정).sql</output_path>
 				<encoding>UTF-8</encoding>
 				<line_feed>CR+LF</line_feed>
 				<is_open_after_saved>true</is_open_after_saved>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2023-04-28 16:28:42</creation_date>
-			<updated_date>2023-04-28 16:37:02</updated_date>
+			<updated_date>2023-04-29 19:29:16</updated_date>
 			<model_property>
 				<name>프로젝트명</name>
 				<value></value>
@@ -180,8 +180,8 @@
 			<args></args>
 			<char_semantics>false</char_semantics>
 			<description></description>
-			<logical_name>adress</logical_name>
-			<physical_name>adress</physical_name>
+			<logical_name>address</logical_name>
+			<physical_name>address</physical_name>
 			<type>varchar(n)</type>
 		</word>
 		<word>
@@ -688,7 +688,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>11</word_id>
+					<word_id>8</word_id>
 					<id>7</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -841,7 +841,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>10</word_id>
+					<word_id>9</word_id>
 					<id>10</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -919,7 +919,7 @@
 					<referenced_complex_unique_key>null</referenced_complex_unique_key>
 				</relation>
 			</connections>
-			<physical_name>ko_Restaurant_Review</physical_name>
+			<physical_name>Ko_Restaurant_Review</physical_name>
 			<logical_name>새 테이블</logical_name>
 			<description></description>
 			<constraint></constraint>
@@ -994,7 +994,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>9</word_id>
+					<word_id>10</word_id>
 					<id>13</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
@@ -1147,7 +1147,7 @@
 					</sequence>
 				</normal_column>
 				<normal_column>
-					<word_id>8</word_id>
+					<word_id>11</word_id>
 					<id>16</id>
 					<description></description>
 					<unique_key_name></unique_key_name>
