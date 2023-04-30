@@ -38,7 +38,17 @@ CREATE SEQUENCE SEQ_Ko_Restaurant_Review_ko_id INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_Restaurant_restaurant_id INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_We_Restaurant_Review_we_id INCREMENT BY 1 START WITH 1;
 
-
+SELECT r.restaurant_id, r.restaurant_name, r.main_menu, r.price, r.address, 
+COALESCE(k.review_rating, j.review_rating, c.review_rating, w.review_rating) as review_rating 
+FROM Restaurant r LEFT JOIN ko_restaurant_review k 
+ON k.restaurant_id = r.restaurant_id 
+LEFT JOIN ja_restaurant_review j 
+ON j.restaurant_id = r.restaurant_id 
+LEFT JOIN ch_restaurant_review c 
+ON c.restaurant_id = r.restaurant_id 
+LEFT JOIN we_restaurant_review w 
+ON w.restaurant_id = r.restaurant_id 
+WHERE r.price < 20000 and r.price >= 10000;
 
 /* Create Tables */
 

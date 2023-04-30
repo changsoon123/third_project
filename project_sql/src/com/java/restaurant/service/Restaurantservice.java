@@ -3,12 +3,16 @@ package com.java.restaurant.service;
 
 import com.java.common.AppService;
 import com.java.restaurant.repository.Restaurantrepository;
+import com.java.restaurant.total.RestaurantTotal;
 import com.java.view.StartUI;
 
 public class Restaurantservice implements AppService{
 
 	private final Restaurantrepository restaurantrepository 
 	= new Restaurantrepository();
+	
+	
+
 	
 	@Override
 	public void start() {
