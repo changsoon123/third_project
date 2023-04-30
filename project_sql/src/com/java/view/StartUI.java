@@ -49,7 +49,8 @@ public class StartUI {
 		public static void searchMenu() {
 			System.out.println("\u001B[31;1;4;41;42;43;44;45;46m----------------------------------------------------\u001B[0m");
 	        System.out.println("1.전체 검색");
-	        System.out.println("2.국가별 음식 검색(한식,중식,일식,양식)");
+	        System.out.println("2.국가별 맛집 검색(한식,중식,일식,양식)");
+	        System.out.println("3.지역별 맛집 검색(서울,인천,경기도,강원도,충청도,경상도,전라도)");	        
 	        System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
 		}
 		
@@ -59,6 +60,18 @@ public class StartUI {
 			System.out.println("2.일식 검색");
 			System.out.println("3.중식 검색");
 			System.out.println("4.양식 검색");
+			System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
+		}
+		
+		public static void region() {
+			System.out.println("\u001B[31;1;4;41;42;43;44;45;46m----------------------------------------------------\u001B[0m");
+			System.out.println("1.서울 검색");
+			System.out.println("2.인천 검색");
+			System.out.println("3.경기도 검색");
+			System.out.println("4.강원도 검색");
+			System.out.println("5.충청도 검색");
+			System.out.println("6.경상도 검색");
+			System.out.println("7.전라도 검색");
 			System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
 		}
 		

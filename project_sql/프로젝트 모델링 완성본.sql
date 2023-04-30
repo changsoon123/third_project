@@ -76,6 +76,8 @@ CREATE TABLE Ko_Restaurant_Review
 INSERT INTO ko_restaurant_review
 VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,1,3458);
 
+INSERT INTO ko_restaurant_review
+VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,8,315);
 
 CREATE TABLE Restaurant
 (
@@ -100,6 +102,12 @@ ALTER TABLE Restaurant MODIFY MAIN_MENU varchar2(40);
 
 INSERT INTO Restaurant
 VALUES(SEQ_Restaurant_restaurant_id.NEXTVAL,'스케줄합정','스케줄 김치볶음밥',18000,'서울');
+
+INSERT INTO Restaurant
+VALUES(SEQ_Restaurant_restaurant_id.NEXTVAL,'스케줄합정','스케줄 김치볶음밥',18000,'서울');
+
+INSERT INTO Restaurant
+VALUES(SEQ_Restaurant_restaurant_id.NEXTVAL,'세마오리농원','생오리 한마리',79000,'경기도');
 
 SELECT * FROM Restaurant;
 COMMIT;

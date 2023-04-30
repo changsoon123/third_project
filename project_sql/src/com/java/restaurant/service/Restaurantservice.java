@@ -29,8 +29,10 @@ public class Restaurantservice implements AppService{
 				restaurantrepository.foodtype(fourvalue);
 				break;
 			case 3:
-
-				return;
+				StartUI.region();
+				int regionnum= StartUI.inputInteger();
+				restaurantrepository.regiontype(regionnum);
+				break;
 				
 			default:
 				System.out.println("메뉴를 다시 입력하세요.");
