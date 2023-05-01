@@ -3,14 +3,14 @@ package com.java.restaurant.service;
 
 import com.java.common.AppService;
 import com.java.restaurant.repository.Restaurantrepository;
-import com.java.restaurant.total.Restauranttotal;
+import com.java.restaurant.total.RestaurantTotal;
 import com.java.view.StartUI;
 
 public class Restaurantservice implements AppService{
 
 	private final Restaurantrepository restaurantrepository 
 	= new Restaurantrepository();
-	private final Restauranttotal restauranttotal = new Restauranttotal();
+	private final RestaurantTotal restauranttotal = new RestaurantTotal();
 	
 	
 	@Override
