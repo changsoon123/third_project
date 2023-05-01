@@ -42,7 +42,7 @@ public class Restaurantservice implements AppService{
 //				StartUI.region();
 //				int regionnum= StartUI.inputInteger();
 //				restaurantrepository.regiontype(regionnum);
-//				break;
+				return;
 				
 			default:
 				System.out.println("메뉴를 다시 입력하세요.");

@@ -1,6 +1,8 @@
 package com.java.main;
 
 import com.java.common.AppService;
+import com.java.restaurant.add.RestaurantAdd;
+import com.java.restaurant.delete.RestaurantDelete;
 import com.java.restaurant.service.Restaurantservice;
 
 public class AppController {
@@ -13,18 +15,18 @@ public class AppController {
 				service = new Restaurantservice();
 				break;
 			case 2: 
-//				service = new OrderService();
+				service = new RestaurantAdd();
 				break;
 			case 3: 
-//				service = new MovieService();
+				service = new RestaurantDelete();
 				break;
 			case 4: 
-//				service = new MovieService();
-				break;
-				
-			case 5: 
 				System.out.println("# 프로그램을 종료합니다");
 				System.exit(0);
+				
+			case 5: 
+//				System.out.println("# 프로그램을 종료합니다");
+//				System.exit(0);
 			
 				
 			default:

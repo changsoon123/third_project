@@ -52,6 +52,7 @@ public class StartUI {
 	        System.out.println("2.국가별 맛집 검색(한식,중식,일식,양식)");
 	        System.out.println("3.지역별 맛집 검색(서울,인천,경기도,강원도,충청도,경상도,전라도)");	  
 	        System.out.println("4.가격별 맛집 검색(만원 미만,2만원 미만,3만원 미만,4만원 미만,5만원 미만,5만원 이상)");	  
+	        System.out.println("5.메인 화면으로 돌아가기");	  
 	        System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
 		}
 		
@@ -86,6 +87,9 @@ public class StartUI {
 			System.out.println("6.50000원 이상 검색");
 			System.out.print("\u001B[31;1;4;41;42;43;44;45;46m >>> 원하는 숫자를 눌러주세요 :\u001B[0m");
 		}
+		
+		
+		
 		
 	        
 	}
