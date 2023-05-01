@@ -77,7 +77,7 @@ INSERT INTO ko_restaurant_review
 VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,1,3458);
 
 INSERT INTO ko_restaurant_review
-VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,3,315);
+VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,8,315);
 
 CREATE TABLE Restaurant
 (
