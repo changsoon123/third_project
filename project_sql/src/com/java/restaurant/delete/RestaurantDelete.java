@@ -38,24 +38,46 @@ public class RestaurantDelete implements AppService{
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-
+			
+			String sqld = "DELETE FROM ko_restaurant_review "
+						+ "WHERE restaurant_id = (SELECT restaurant_id "
+						+ "FROM restaurant "
+						+ "WHERE restaurant_name = " + "'" + resName + "'" + ")";
+			
 			String sql = "DELETE FROM Restaurant WHERE restaurant_name = " + "'" + resName + "'";
 
-			try(Connection conn = connection.getConnection();
-					PreparedStatement pstmt = conn.prepareStatement(sql);) {
+			try {
+
+				Connection conn = connection.getConnection();
+				PreparedStatement pstmt = conn.prepareStatement(sqld);
+
+				conn.setAutoCommit(false);
 
 				if(pstmt.executeUpdate() == 1) {
-					System.out.printf("\n### [%s] 식당이 삭제되었습니다.\n", resName);
-					break;
+					System.out.printf("\n### [%s] 식당이 삭제되는 중입니다.\n", resName);
 				} else {
 					System.out.println("식당 삭제 실패!");
-					break;
 				}
+
+				pstmt = conn.prepareStatement(sql);
+				
+
+				if(pstmt.executeUpdate() == 1) {
+					System.out.println("식당 삭제 완료!");
+					conn.commit();
+				} else {
+					System.out.println("식당 삭제 실패!");
+					conn.rollback();
+				}
+
+				break;
 
 
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
+			
+			
 
 
 		}
