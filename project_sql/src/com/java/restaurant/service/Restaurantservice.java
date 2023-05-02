@@ -3,12 +3,15 @@ package com.java.restaurant.service;
 
 import com.java.common.AppService;
 import com.java.restaurant.repository.Restaurantrepository;
+import com.java.restaurant.total.RestaurantTotal;
 import com.java.view.StartUI;
 
 public class Restaurantservice implements AppService{
 
 	private final Restaurantrepository restaurantrepository 
 	= new Restaurantrepository();
+	private final RestaurantTotal restauranttotal = new RestaurantTotal();
+	
 	
 	@Override
 	public void start() {
@@ -39,11 +42,13 @@ public class Restaurantservice implements AppService{
 				restaurantrepository.pricetype(pricenum);
 				break;
 			case 5:
-//				StartUI.region();
-//				int regionnum= StartUI.inputInteger();
-//				restaurantrepository.regiontype(regionnum);
-				return;
 				
+				StartUI.totalthen();
+				int totalnum= StartUI.inputInteger();
+				restauranttotal.totalrestauranttotal(totalnum);
+				break;
+			case 6:
+				return;
 			default:
 				System.out.println("메뉴를 다시 입력하세요.");
 			}
