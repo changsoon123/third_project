@@ -27,7 +27,7 @@ public class Restaurantrepository {
 			int count = 0;
 			while(rs.next()) {
 
-				int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//				int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 				String restaurant_name = rs.getString("restaurant_name"); 
 				String main_menu = rs.getString("main_menu"); 
 				int price = rs.getInt("price");
@@ -38,7 +38,7 @@ public class Restaurantrepository {
 
 				count++;
 
-				System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n", restaurant_id, restaurant_name, main_menu, price, address);
+				System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n", restaurant_name, main_menu, price, address);
 				System.out.println("------------------------");
 
 			}
@@ -68,7 +68,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -80,7 +80,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -106,7 +106,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -117,7 +117,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -144,7 +144,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -156,7 +156,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -183,7 +183,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -194,7 +194,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -237,7 +237,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -249,7 +249,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -275,7 +275,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -286,7 +286,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -313,7 +313,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -325,7 +325,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -352,7 +352,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -363,7 +363,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -391,7 +391,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -402,7 +402,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -430,7 +430,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -441,7 +441,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -469,7 +469,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -480,7 +480,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -526,7 +526,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -538,7 +538,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -564,7 +564,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -575,7 +575,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -602,7 +602,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -614,7 +614,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -641,7 +641,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -652,7 +652,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -680,7 +680,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -691,7 +691,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
@@ -719,7 +719,7 @@ public class Restaurantrepository {
 					int count = 0;
 					while(rs.next()) {
 
-						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
+//						int restaurant_id = rs.getInt("restaurant_id"); //괄호 안에 컬럼명
 						String restaurant_name = rs.getString("restaurant_name"); 
 						String main_menu = rs.getString("main_menu"); 
 						int price = rs.getInt("price");
@@ -730,7 +730,7 @@ public class Restaurantrepository {
 
 						count++;
 
-						System.out.printf("# 가게 id: %d\n# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_id, restaurant_name, main_menu, price, address, review_rating);
+						System.out.printf("# 가게 이름: %s\n# 가게 메뉴: %s\n# 가격: %d원\n# 가게 주소: %s\n# 리뷰 수: %d\n", restaurant_name, main_menu, price, address, review_rating);
 						System.out.println("------------------------");
 
 					}
