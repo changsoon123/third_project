@@ -39,6 +39,11 @@ CREATE SEQUENCE SEQ_Restaurant_restaurant_id INCREMENT BY 1 START WITH 1;
 CREATE SEQUENCE SEQ_We_Restaurant_Review_we_id INCREMENT BY 1 START WITH 1;
 
 
+SELECT SEQ_Restaurant_restaurant_id.CURRVAL FROM dual;
+
+
+INSERT INTO ko_restaurant_review 
+VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL, SEQ_Restaurant_restaurant_id.CURRVAL, 111);
 
 /* Create Tables */
 
@@ -73,11 +78,13 @@ CREATE TABLE Ko_Restaurant_Review
 	PRIMARY KEY (ko_id)
 );
 
-INSERT INTO ko_restaurant_review
-VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,1,3458);
+commit;
 
 INSERT INTO ko_restaurant_review
-VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,8,315);
+VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,SEQ_Restaurant_restaurant_id.CURRVAL,3458);
+
+INSERT INTO ko_restaurant_review
+VALUES(SEQ_Ko_Restaurant_Review_ko_id.NEXTVAL,1,315);
 
 CREATE TABLE Restaurant
 (
